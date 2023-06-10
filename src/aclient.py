@@ -98,7 +98,7 @@ class aclient(discord.Client):
         if self.is_replying_all == "False":
             author = message.user.id
         else:
-            author = message.author.id
+            author = message.user.id //author
         try:
             response = (f'> **{user_message}** - <@{str(author)}> \n\n')
             if self.chat_model == "OFFICIAL":
